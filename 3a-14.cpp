@@ -1,18 +1,23 @@
-#include <iostream>
+#include<iostream>
+#include <math.h>
 using namespace std;
-int main() {
-int k, i = 1, sum_k = 0, number;
-cout << "Enter the amount of integers to sum: "; 
+int main()
+{
+int i = 1, sum_k = 0, number;
+float k;
+cout << " Enter the amount of integers  = ";
 cin >> k;
-if (k == 0) {
-cout << "Total sum is 0" << endl;
+if (k!=(int)k)
+{
+cout << "Error:";
+cin >> k;
 }
-do {
-cout << "Enter integer nr " << i << ": "; 
+do 
+{
+cout << "Enter integer nr. " << i << ": ";
 cin >> number;
-sum_k += number; 
-i++;
+sum_k += number; i++;
 } while (i <= k);
-cout << "The total sum of " << k << " integers is: " << sum_k << endl; 
+cout << " The total sum of " << k << " integers is: " << sum_k;
 return 0;
 }
